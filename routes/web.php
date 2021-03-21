@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Livewire\ChartComponent;
+use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\ShopComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +22,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', HomeComponent::class);
+Route::get('/index.html', HomeComponent::class);
+route::get('/shop', ShopComponent::class);
+route::get('/cart', ChartComponent::class);
+route::get('/checkout', CheckoutComponent::class);
