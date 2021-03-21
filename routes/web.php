@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
-use App\Http\Livewire\ChartComponent;
+use App\Http\Livewire\CartComponent;
 use App\Http\Livewire\CheckoutComponent;
 use App\Http\Livewire\DetailsComponent;
 use App\Http\Livewire\HomeComponent;
@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeComponent::class);
 Route::get('/index.html', HomeComponent::class);
 route::get('/shop', ShopComponent::class);
-route::get('/cart', ChartComponent::class);
+route::get('/cart', CartComponent::class);
 route::get('/checkout', CheckoutComponent::class);
 Route::get('/products/{slug}', DetailsComponent::class)->name('product.details');
 
