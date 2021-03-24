@@ -93,7 +93,7 @@
 							<ul class="list-category">
 								@foreach ($categories as $category)
 								<li class="category-item">
-									<a href="#" class="cate-link">({{$category->name}})</a>
+									<a href="{{route('product.category',['category_slug'=>$category->slug])}}" class="cate-link">({{$category->name}})</a>
 								</li>
 								@endforeach
 								
