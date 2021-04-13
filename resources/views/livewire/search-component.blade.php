@@ -99,7 +99,6 @@
                                 <a href="{{route('product.category',['category_slug'=>$category->slug])}}" class="cate-link">({{$category->name}})</a>
                             </li>
                             @endforeach
-                            
                         </ul>
                     </div>
                 </div><!-- Categories widget-->
